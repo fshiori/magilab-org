@@ -6,5 +6,5 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://www.magilab.org',
-  integrations: [mdx(), sitemap(), tailwind()]
+  integrations: [mdx(), tailwind()]
 });
