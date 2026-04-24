@@ -5,75 +5,78 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
 <BaseLayout title="Lab Stacks | Magi Lab" sideBarActiveItemID="cv">
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Lab Stacks</div>
+    <div class="text-3xl w-full font-bold">Technical Focus</div>
   </div>
 
   <div class="mb-10 text-justify">
-    Building modern, scalable, and intelligent systems with a focus on efficiency and user experience.
+    Strategic implementation of high-concurrency systems, real-time architectures, and automated intelligence.
   </div>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Core Technologies</div>
+    <div class="text-3xl w-full font-bold">Primary Expertise</div>
   </div>
 
   <div class="time-line-container grid gap-4 mb-10">
     <TimeLineElement
-      title="Golang"
-      subtitle="High-performance backend systems and microservices."
+      title="Go Backend Architecture"
+      subtitle="Designing high-concurrency, low-latency microservices with a focus on domain-driven design and robust concurrency patterns."
     >
-      <div class="flex gap-2 mt-1">
-        <span class="badge badge-sm bg-[#00ADD8] text-white border-none font-bold">GOPHER</span>
+      <div class="flex flex-wrap gap-2 mt-2">
+        <span class="badge badge-sm bg-[#00ADD8] text-white border-none font-bold">GOLANG</span>
         <span class="badge badge-sm badge-outline opacity-50 text-xs">Concurrency</span>
+        <span class="badge badge-sm badge-outline opacity-50 text-xs">DDD</span>
       </div>
     </TimeLineElement>
     <TimeLineElement
-      title="Python"
-      subtitle="AI/ML Research, Data Processing, and Automation scripts."
+      title="Data & Infrastructure"
+      subtitle="Operational excellence in PostgreSQL, Redis, and Kafka for real-time data streaming and persistent storage."
     >
-      <div class="flex gap-2 mt-1">
-        <span class="badge badge-sm bg-[#3776AB] text-white border-none font-bold">PYTHON</span>
-        <span class="badge badge-sm badge-outline opacity-50 text-xs">PyTorch</span>
+      <div class="flex flex-wrap gap-2 mt-2">
+        <span class="badge badge-sm bg-[#336791] text-white border-none font-bold">POSTGRES</span>
+        <span class="badge badge-sm bg-[#D22B2B] text-white border-none font-bold">REDIS</span>
+        <span class="badge badge-sm bg-[#231F20] text-white border-none font-bold">KAFKA</span>
       </div>
     </TimeLineElement>
     <TimeLineElement
-      title="Cloudflare"
-      subtitle="Edge computing, Workers, and Serverless architecture."
+      title="Real-time Systems"
+      subtitle="Implementation of low-latency communication using WebSockets and LiveKit for interactive, stateful applications."
     >
-      <div class="flex gap-2 mt-1">
-        <span class="badge badge-sm bg-[#F38020] text-white border-none font-bold">WORKERS</span>
-        <span class="badge badge-sm badge-outline opacity-50 text-xs">Edge Computing</span>
+      <div class="flex flex-wrap gap-2 mt-2">
+        <span class="badge badge-sm bg-[#6247AA] text-white border-none font-bold">LIVEKIT</span>
+        <span class="badge badge-sm badge-outline opacity-50 text-xs">WebSockets</span>
       </div>
     </TimeLineElement>
     <TimeLineElement
-      title="AI Agents"
-      subtitle="LLM orchestration, prompt engineering, and autonomous systems."
+      title="Edge & Cloud Infrastructure"
+      subtitle="Optimizing global delivery and serverless execution using Cloudflare Workers, Pages, and robust CI/CD pipelines."
     >
-      <div class="flex gap-2 mt-1">
-        <span class="badge badge-sm bg-[#9C27B0] text-white border-none font-bold">AGENTS</span>
+      <div class="flex flex-wrap gap-2 mt-2">
+        <span class="badge badge-sm bg-[#F38020] text-white border-none font-bold">CLOUDFLARE</span>
+        <span class="badge badge-sm badge-outline opacity-50 text-xs">CI/CD</span>
+        <span class="badge badge-sm badge-outline opacity-50 text-xs">IaC</span>
+      </div>
+    </TimeLineElement>
+    <TimeLineElement
+      title="AI & Workflow Automation"
+      subtitle="Orchestrating LLM agents and autonomous workflows to bridge the gap between AI models and production backend services."
+    >
+      <div class="flex flex-wrap gap-2 mt-2">
+        <span class="badge badge-sm bg-[#9C27B0] text-white border-none font-bold">AI AGENTS</span>
         <span class="badge badge-sm badge-outline opacity-50 text-xs">LLM Orchestration</span>
       </div>
     </TimeLineElement>
   </div>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Infrastructure & Tools</div>
+    <div class="text-3xl w-full font-bold">Methodologies</div>
   </div>
 
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>Docker & Containerization</li>
-    <li>PostgreSQL & Redis</li>
-    <li>Tailwind CSS & Astro</li>
-    <li>Git / GitHub Actions CI/CD</li>
-  </ul>
-
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Focus Areas</div>
-  </div>
-
-  <ul class="list-disc md:columns-2 columns-1 mx-6">
-    <li>Fintech Automation</li>
-    <li>Generative AI Applications</li>
-    <li>Interactive Storytelling</li>
-    <li>Distributed Systems</li>
+  <ul class="list-disc mx-6 mb-10 grid grid-cols-1 md:grid-cols-2 gap-2 text-white/70">
+    <li>Test-Driven Development (TDD)</li>
+    <li>Observability-Driven Development</li>
+    <li>Zero-Trust Security Architecture</li>
+    <li>Event-Sourcing & CQRS</li>
+    <li>Infrastructure as Code (IaC)</li>
+    <li>High-Availability Design</li>
   </ul>
 </BaseLayout>
