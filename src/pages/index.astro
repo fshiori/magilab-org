@@ -14,6 +14,23 @@ import HorizontalCard from "../components/HorizontalCard.astro";
         This is a personal experimental laboratory where ideas come to life.
       </text>
     </div>
+
+    <!-- Terminal Status Bar -->
+    <div class="mt-6 font-mono text-sm bg-base-300 p-3 rounded-lg border border-white/10 shadow-inner">
+      <div class="flex items-center gap-2 mb-1">
+        <span class="w-3 h-3 rounded-full bg-error"></span>
+        <span class="w-3 h-3 rounded-full bg-warning"></span>
+        <span class="w-3 h-3 rounded-full bg-success"></span>
+        <span class="ml-2 text-white/50 text-xs">magi-lab — status</span>
+      </div>
+      <div class="text-success">
+        <span class="text-white/50">$</span> systemctl status magi-engine <span class="bg-success text-black px-1 ml-1 rounded">ACTIVE</span>
+      </div>
+      <div class="text-white/70">
+        <span class="text-white/50">$</span> last-update: 2026-04-24 15:41 CST
+      </div>
+    </div>
+
     <div class="mt-8">
       <a class="btn" href="https://fshiori.substack.com/" target="_blank"> Eric 觀察筆記</a>
       <a href="/projects" class="btn btn-outline ml-5"> View Projects</a>
