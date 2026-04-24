@@ -12,10 +12,13 @@ const { sideBarActiveItemID } = Astro.props;
       <a href="/">
         <div class="avatar transition ease-in-out hover:scale-[102%] block m-auto">
           <div class="w-[8.5rem]">
-            <Image class="mask mask-circle" format="webp" width={300} height={300} src="/profile.webp" alt="Profile image" />
+            <img class="mask mask-circle" src="https://www.gravatar.com/avatar/6ee4483a76934a3e05d884b42a7a3605?s=300" alt="Profile image" />
           </div>
         </div>
       </a>
+      <div class="text-center mt-3">
+        <span class="font-bold text-xl">Eric Chen</span>
+      </div>
     </div>
     <SideBarMenu sideBarActiveItemID={sideBarActiveItemID} />
     <SideBarFooter />
